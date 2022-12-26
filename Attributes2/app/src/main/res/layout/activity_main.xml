@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonBlackText"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Чёрный текст"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSize8"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/buttonBlackText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonRedText"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Красный текст"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSize24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBlackText"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonSize8"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Размер 8SP"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWhiteBackground"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSize24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBlackText" />
+
+    <Button
+        android:id="@+id/buttonSize24"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Размер 24SP"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonYellowBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSize8"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRedText" />
+
+    <Button
+        android:id="@+id/buttonWhiteBackground"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Белый Фон"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonYellowBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSize8" />
+
+    <Button
+        android:id="@+id/buttonYellowBackground"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Жёлтый Фон"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonWhiteBackground"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSize24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
